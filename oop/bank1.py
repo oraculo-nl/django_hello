@@ -21,3 +21,4 @@ print(rekening.opname(3.50))
 print(rekening.saldo())
 print(rekening.stort())
 print(rekening.opname(10))
+
