@@ -1,3 +1,4 @@
+
 class Bankrekening:
     def __init__(self):
         self.__saldo = 0.00
@@ -13,6 +14,7 @@ class Bankrekening:
             return "Onvoldoende saldo"
     def saldo(self):
         return self.__saldo
+
 rekening = Bankrekening()
 print(rekening.stort(5.00))
 print(rekening.opname(3.50))
