@@ -23,4 +23,5 @@ urlpatterns = [
     path('playground/', include('playground.urls')),
     path('members/', include('members.urls')),
     path('charts/', include('charts.urls')),
+    path('budget/', include('budget.urls')),
 ]
