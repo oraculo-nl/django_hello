@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'hello',
     'playground',
     'hello2',
-    'members'
+    'members',
+    'charts'
 ]
 
 MIDDLEWARE = [
