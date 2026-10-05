@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Nieuw member</title></head>
+<body>
+<h1>Member toevoegen</h1>
+<form method="post" novalidate>
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">Opslaan</button>
+</form>
+<p><a href="{% url 'member-create' %}">Nog een toevoegen</a> |
+    <a href="{% url 'hello-form' %}">Start</a></p>
+</body>
+</html>
