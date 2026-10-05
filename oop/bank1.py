@@ -1,3 +1,8 @@
+#
+# dit zijn wijgingen tbv de voorbeeldfeature
+#
+
+
 class Bankrekening:
     def __init__(self):
         self.__saldo = 0.00
