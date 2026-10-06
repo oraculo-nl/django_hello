@@ -1,6 +1,7 @@
 from datetime import datetime
 from decimal import Decimal, InvalidOperation
 
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
@@ -24,6 +25,8 @@ def transacties(request):
     return render(request, "budget/transacties.html", {"transacties": alle})
 
 #
+
+@login_required
 def upload(request):
     if request.method == "POST":
         form = UploadForm(request.POST, request.FILES)

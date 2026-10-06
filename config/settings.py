@@ -131,3 +131,7 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+LOGIN_URL = "login" # naam uit django.contrib.auth.urls
+LOGIN_REDIRECT_URL = "home" # na succesvol inloggen
+LOGOUT_REDIRECT_URL = "login"
